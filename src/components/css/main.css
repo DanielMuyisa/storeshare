@@ -1,0 +1,13 @@
+.Main_custom {
+    background: rgb(1, 83, 104);
+    background: rgb(0, 87, 68);
+}
+
+._input {
+    border-radius: 30px !important;
+    border: none;
+}
+
+._input:focus {
+    border: none;
+}
