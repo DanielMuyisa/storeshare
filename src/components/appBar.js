@@ -13,7 +13,11 @@ import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 
-const pages = ['Products', 'Pricing', 'Blog'];
+// icon
+import Store from '@mui/icons-material/Storefront';
+import { TextField } from '@mui/material';
+
+const pages = ['Produits', 'Categorie', 'Boutiques'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 const ResponsiveAppBar = () => {
@@ -39,7 +43,7 @@ const ResponsiveAppBar = () => {
         <AppBar position="static" color="secondary">
             <Container maxWidth="xl">
                 <Toolbar disableGutters>
-                    <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
+                    <Store sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
                     <Typography
                         variant="h6"
                         noWrap
@@ -50,7 +54,7 @@ const ResponsiveAppBar = () => {
                             display: { xs: 'none', md: 'flex' },
                             fontFamily: 'monospace',
                             fontWeight: 700,
-                            letterSpacing: '.3rem',
+                            letterSpacing: '.1rem',
                             color: 'inherit',
                             textDecoration: 'none',
                         }}
@@ -124,6 +128,9 @@ const ResponsiveAppBar = () => {
                             </Button>
                         ))}
                     </Box>
+
+                    <TextField id="standard-basic" label="Rechercher" size='small' variant="Outlined" />
+
 
                     <Box sx={{ flexGrow: 0 }}>
                         <Tooltip title="Open settings">
