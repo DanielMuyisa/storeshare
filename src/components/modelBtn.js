@@ -1,9 +1,11 @@
-import React from 'react'
+import React from 'react';
 
 function ModelBtn() {
-    return (
-        <div>ModelBtn</div>
-    )
+    return React.createElement(
+        'div',
+        null,
+        'ModelBtn'
+    );
 }
 
-export default ModelBtn
+export default ModelBtn;
