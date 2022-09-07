@@ -129,7 +129,9 @@ const ResponsiveAppBar = () => {
                         ))}
                     </Box>
 
-                    <TextField id="standard-basic" label="Rechercher" size='small' variant="Outlined" />
+                    <TextField id="outlined-basic"
+                        sx={{ mr: 2, color: 'white', backgroundColor: 'white' }}
+                        label="Rechercher" size='small' variant="outlined" />
 
 
                     <Box sx={{ flexGrow: 0 }}>
