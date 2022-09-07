@@ -1,24 +1,17 @@
-import * as React from 'react';
-import AppBar from '@mui/material/AppBar';
-import Box from '@mui/material/Box';
-import Toolbar from '@mui/material/Toolbar';
-import IconButton from '@mui/material/IconButton';
-import Typography from '@mui/material/Typography';
-import Menu from '@mui/material/Menu';
-import MenuIcon from '@mui/icons-material/Menu';
-import Container from '@mui/material/Container';
-import Avatar from '@mui/material/Avatar';
-import Button from '@mui/material/Button';
-import Tooltip from '@mui/material/Tooltip';
-import MenuItem from '@mui/material/MenuItem';
-import AdbIcon from '@mui/icons-material/Adb';
+import * as React from 'react'
+import {
+    AppBar, Box, Toolbar, IconButton, Typography, Menu, MenuIcon, Container, Avatar, Button, Tooltip,
+    MenuItem
+} from '../constant/FMaterielTools'
+// icons
+import { FIcon } from '../constant/FIcon';
+// css
+import './css/main.css'
+import ModelSearch from './modelSearch';
+// widgets
+import { settings } from './widget';
 
-// icon
-import Store from '@mui/icons-material/Storefront';
-import { TextField } from '@mui/material';
-
-const pages = ['Produits', 'Categorie', 'Boutiques'];
-const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
+const pages = ['Produits', 'Categorie', 'Boutiques']
 
 const ResponsiveAppBar = () => {
     const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -40,10 +33,10 @@ const ResponsiveAppBar = () => {
     };
 
     return (
-        <AppBar position="static" color="secondary">
+        <AppBar position="static" className='Main_custom'>
             <Container maxWidth="xl">
                 <Toolbar disableGutters>
-                    <Store sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
+                    <FIcon.Store sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
                     <Typography
                         variant="h6"
                         noWrap
@@ -98,7 +91,9 @@ const ResponsiveAppBar = () => {
                             ))}
                         </Menu>
                     </Box>
-                    <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
+
+                    {/* MIN DEVICES */}
+                    <FIcon.Store sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
                     <Typography
                         variant="h5"
                         noWrap
@@ -117,6 +112,7 @@ const ResponsiveAppBar = () => {
                     >
                         LOGO
                     </Typography>
+
                     <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
                         {pages.map((page) => (
                             <Button
@@ -129,13 +125,10 @@ const ResponsiveAppBar = () => {
                         ))}
                     </Box>
 
-                    <TextField id="outlined-basic"
-                        sx={{ mr: 2, color: 'white', backgroundColor: 'white' }}
-                        label="Rechercher" size='small' variant="outlined" />
-
+                    <ModelSearch />
 
                     <Box sx={{ flexGrow: 0 }}>
-                        <Tooltip title="Open settings">
+                        <Tooltip title="Profil">
                             <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
                                 <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
                             </IconButton>
@@ -168,4 +161,5 @@ const ResponsiveAppBar = () => {
         </AppBar>
     );
 };
+
 export default ResponsiveAppBar;
