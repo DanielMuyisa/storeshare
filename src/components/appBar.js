@@ -131,7 +131,7 @@ const ResponsiveAppBar = () => {
                         <Tooltip title="Profil">
                             <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
                                 <Avatar variant="rounded">
-                                    <FIcon.Man color='secondary.dark' />
+                                    <FIcon.Man />
                                 </Avatar>
                             </IconButton>
                         </Tooltip>
