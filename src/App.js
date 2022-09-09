@@ -11,7 +11,7 @@ function App() {
           height: 400,
         }}
       >
-      </Box>
+        {/* </Box>
       <Box
         sx={{
           height: 400,
@@ -22,7 +22,7 @@ function App() {
         sx={{
           height: 400,
         }}
-      >
+      > */}
       </Box>
     </div>
   );
