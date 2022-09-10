@@ -9,9 +9,10 @@ function App() {
       <Box
         sx={{
           height: 400,
-          backgroundColor: "black"
+          backgroundColor: "whitesmoke"
         }}
       >
+        {/* <img FImage */}
       </Box>
       <Box
         sx={{
