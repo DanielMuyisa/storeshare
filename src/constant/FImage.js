@@ -1,7 +1,5 @@
-// const expo = require('../../assets/images/expo.png')
+import shopping from '../assets/illustration/shopping.png';
 
-// const FImage = {
-//     ,
-// };
-
-// export default FImage;
+export const FImage = {
+    shopping
+};
