@@ -1,6 +1,7 @@
 import { Box } from '@mui/material';
 import './App.css';
 import BoxSx from './components/appBar';
+import shopping from './assets/images/shopping.png';
 
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
           backgroundColor: "whitesmoke"
         }}
       >
-        {/* <img FImage */}
+        <img src={shopping} />
       </Box>
       <Box
         sx={{
