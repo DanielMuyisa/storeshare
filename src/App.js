@@ -9,6 +9,7 @@ function App() {
       <Box
         sx={{
           height: 400,
+          backgroundColor: "black"
         }}
       >
       </Box>
