@@ -6,7 +6,7 @@ function Login(props) {
         <>
             <div>Login</div>
             <form>
-
+                <input />
             </form>
         </>
     )
