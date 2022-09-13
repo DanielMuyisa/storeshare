@@ -13,7 +13,7 @@ function App() {
           backgroundColor: "whitesmoke"
         }}
       >
-        <img src={shopping} />
+        <img src={shopping} width={"80%"} alt={'bannier'} />
       </Box>
       <Box
         sx={{
@@ -21,12 +21,12 @@ function App() {
         }}
       >
       </Box>
-      <Box
+      {/* <Box
         sx={{
           height: 400,
         }}
       >
-      </Box>
+      </Box> */}
     </div>
   );
 }
