@@ -5,9 +5,9 @@ function Login(props) {
     return (
         <>
             <div>Login</div>
-            {/* <form>
+            <form>
                 <input />
-            </form> */}
+            </form>
         </>
     )
 }
