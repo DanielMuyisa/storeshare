@@ -4,6 +4,6 @@ import Button from '@mui/material/Button';
 export default function App() {
   return <div id='root'>
     {/* router */}
-    <Button variant="contained">Hello World</Button>
+    <Button variant="contained">Hello</Button>
   </div>
 };
